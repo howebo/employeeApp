@@ -1,3 +1,11 @@
+[SCREENSHOTS]
+
+#1 ![image](https://github.com/howebo/employeeApp/assets/129828032/37769a13-c528-40c8-8210-79c0c0a2c5f8)
+#2 ![image](https://github.com/howebo/employeeApp/assets/129828032/dfedc030-21b1-4999-a480-da1ef912dbf9)
+#3 ![image](https://github.com/howebo/employeeApp/assets/129828032/3b8b4135-9405-4560-9e03-32e20aca13b1)
+#4 ![image](https://github.com/howebo/employeeApp/assets/129828032/6760d138-49f9-40f9-923c-b3e36f12c2bf)
+
+
 # EmployeeApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.2.
