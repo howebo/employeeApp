@@ -1,0 +1,65 @@
+<section class="employee-dashboard-container">
+  <div class="table-responsive" style="max-height: 600px; overflow-y: auto">
+    <table class="table table-bordered table-striped table-hover mt-4">
+      <thead class="thead-dark">
+        <tr>
+          <th>Employee Name</th>
+          <th>Designation</th>
+          <th>Date of Birth</th>
+          <th>Date of Joining</th>
+          <th>Blood Group</th>
+          <th>Mobile</th>
+          <th>Email</th>
+          <th>Address</th>
+          <th>Doc Upload</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let employee of employees">
+          <td>{{ employee.name }}</td>
+          <td>{{ employee.designation }}</td>
+          <td>{{ employee.dob | date : "dd/MM/yyyy" }}</td>
+          <td>{{ employee.doj | date : "dd/MM/yyyy" }}</td>
+          <td>{{ employee.bloodGroup }}</td>
+          <td>{{ employee.mobile }}</td>
+          <td>{{ employee.email }}</td>
+          <td>{{ employee.address }}</td>
+          <td>
+            <button
+              mat-raised-button
+              class="btn btn-sm btn-primary"
+              color="primary"
+              (click)="uploadFile(employee)"
+            >
+              Upload
+              {{employee.img.pancard}}
+              {{employee.img.aadharcard}}
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="pagination footer">
+    <button
+      class="m-4"
+      mat-button
+      color="primary"
+      [disabled]="currentPage === 1"
+      (click)="prevPage()"
+    >
+      Previous
+    </button>
+    <span class="m-4">{{ currentPage }} / {{ totalPages }}</span>
+    <button
+      class="m-4"
+      mat-button
+      color="primary"
+      [disabled]="currentPage === totalPages"
+      (click)="nextPage()"
+    >
+      Next
+    </button>
+  </div>
+</section>

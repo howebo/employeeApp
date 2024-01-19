@@ -1,0 +1,29 @@
+<div class="image-upload-form">
+  <h2>Image Upload</h2>
+
+  <div class="file-upload">
+    <label for="pancard">Upload Pancard:</label>
+    <input
+      type="file"
+      id="pancard"
+      (change)="onFileChange($event, 'pancard')"
+    />
+    <div *ngIf="pancardPreview" class="preview-container">
+      <img [src]="pancardPreview" alt="Pancard Preview" class="preview-image" />
+    </div>
+  </div>
+
+  <div class="file-upload">
+    <label for="aadharcard">Upload Aadhar Card:</label>
+    <input
+      type="file"
+      id="aadharcard"
+      (change)="onFileChange($event, 'aadharcard')"
+    />
+    <div *ngIf="aadharcardPreview" class="preview-container">
+      <img [src]="aadharcardPreview" alt="Aadhar Card Preview" class="preview-image" />
+    </div>
+  </div>
+
+  <button (click)="submitImages()">Submit</button>
+</div>

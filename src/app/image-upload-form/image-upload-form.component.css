@@ -1,0 +1,20 @@
+.image-upload-form {
+  max-width: 400px;
+  margin: auto;
+}
+
+.file-upload {
+  margin-bottom: 20px;
+}
+
+.preview-container {
+  margin-top: 10px;
+}
+
+.preview-image {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
